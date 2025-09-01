@@ -14,7 +14,7 @@ export default function Navbar() {
 
   };
     return (
-        <nav className="fixed left-1/2 top-4 z-50 w-[96vw] md:w-[90vw] max-w-6xl -translate-x-1/2 rounded-2xl bg-white/90 backdrop-blur-lg shadow-xl border border-gray-200/50 dark:bg-neutral-900/90 dark:border-neutral-800/50 flex items-center justify-between px-4 md:px-6 py-3 md:py-4 transition-all">
+        <nav className="fixed left-1/2 top-4 z-50 w-[96vw] md:w-[90vw] max-w-6xl -translate-x-1/2 rounded-2xl bg-white/90 backdrop-blur-lg shadow-xl border border-gray-200/50 flex items-center justify-between px-4 md:px-6 py-3 md:py-4 transition-all">
             <div>NusaExplore</div>
             <button onClick={toggleMenu}
       style={{
