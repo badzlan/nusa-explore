@@ -1,11 +1,17 @@
-import "./lib/fontawesome";
-import Image from "next/image";
-import Navbar from './components/navbar';
+import Features from "./components/feature";
+import Footer from "./components/footer";
+import Hero from "./components/hero";
+import Navbar from "./components/navbar";
+import Team from "./components/team";
 
 export default function Home() {
-  return (
-    <div className="min-h-screen w-full bg-white">
-      <Navbar />
-    </div>
-  );
+   return (
+      <main>
+         <Navbar />
+         <Hero />
+         <Features />
+         <Team />
+         <Footer />
+      </main>
+   );
 }

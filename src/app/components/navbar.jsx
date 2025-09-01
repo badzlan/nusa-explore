@@ -1,41 +1,32 @@
-'use client';
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faXmark, faHome } from "@fortawesome/free-solid-svg-icons";
-import { useState } from "react"
+import Link from "next/link";
+import Image from "next/image";
 
 export default function Navbar() {
-    const [menuVisibility, setMenuVisibility] = useState(false);
-    const [fade, setFade] = useState(false);
+   return (
+      <div className="ud-header absolute left-0 top-0 z-40 flex w-full items-center bg-transparent">
+         <div className="container">
+            <div className="relative -mx-4 flex items-center justify-between">
+               <div className="px-4">
+                  <Link href="/" className="navbar-logo block py-5">
+                     <Image src="/logo.jpg" alt="logo" width={60} height={60} priority />
+                  </Link>
+               </div>
 
-    const toggleMenu = () => {
-    setMenuVisibility((prev) => !prev);
-    setFade(true);
-    setTimeout(() => setFade(false), 200);
+               <div className="flex w-full items-center justify-between px-4">
+                  <nav
+                     className={` absolute right-4 top-full w-full max-w-[250px] rounded-lg bg-white py-5 shadow-lg dark:bg-dark-2 lg:static lg:block lg:w-full lg:max-w-full lg:bg-transparent lg:px-4 lg:py-0 lg:shadow-none xl:px-6`}
+                  ></nav>
 
-  };
-    return (
-        <nav className="fixed left-1/2 top-4 z-50 w-[96vw] md:w-[90vw] max-w-6xl -translate-x-1/2 rounded-2xl bg-white/90 backdrop-blur-lg shadow-xl border border-gray-200/50 flex items-center justify-between px-4 md:px-6 py-3 md:py-4 transition-all">
-            <div>NusaExplore</div>
-            <button onClick={toggleMenu}
-      style={{
-        display: "inline-block",
-        transition: "opacity 0.2s ease-in-out, transform 0.2s ease-in-out",
-        opacity: fade ? 0 : 1,
-        transform: menuVisibility ? "rotate(180deg)" : "rotate(0deg)",
-        cursor: "pointer"
-      }}>
-            <div className="lg:hidden flex items-center gap-2">
-                <FontAwesomeIcon
-          icon={menuVisibility ? faXmark : faBars}
-          size="xl"
-        />
+                  <div className="flex items-center justify-end pr-16 lg:pr-0">
+                     <div className="hidden sm:flex">
+                        <Link href="/signup" className="signUpBtn rounded-md bg-white bg-opacity-20 px-6 py-2 text-base font-medium text-white duration-300 ease-in-out hover:bg-opacity-100 hover:text-dark">
+                           Ayo Eksplor
+                        </Link>
+                     </div>
+                  </div>
+               </div>
             </div>
-            </button>
-            <div className={`lg:hidden fixed left-1/2 top-20 z-40 -translate-x-1/2 min-w-[90vw] max-w-md rounded-xl shadow-lg
-        transition-all duration-500 ease-out
-        ${menuVisibility ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-10 pointer-events-none"}`}>
-            <div className="bg-white dark:bg-neutral-900 rounded-2xl shadow-2xl flex flex-col gap-1 py-6 px-4 border border-gray-200 dark:border-gray-800"></div>
-        </div>
-        </nav>
-    )
+         </div>
+      </div>
+   );
 }
