@@ -1,18 +1,24 @@
-import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import Image from "next/image";
 
-export default function navbar() {
+export default function Navbar() {
    return (
-      <nav className="fixed left-1/2 top-4 z-50 w-[96vw] md:w-[90vw] max-w-6xl -translate-x-1/2 rounded-2xl bg-white/90 backdrop-blur-lg shadow-xl border border-gray-200/50 dark:bg-neutral-900/90 dark:border-neutral-800/50 flex items-center justify-between px-4 md:px-6 py-3 md:py-4 transition-all">
-         <div className="flex items-center gap-2 md:gap-4">
-            <Link href="/" className="flex items-center gap-2 font-bold text-green-600 text-xl hover:text-green-700 transition-colors">
-               <Image src="/logo.png" alt="Orza Logo" width={28} height={28} className="object-contain" />
-               Orza
-            </Link>
-         </div>
+      <div className="ud-header absolute left-0 top-0 z-40 flex w-full items-center bg-primary">
+         <div className="container">
+            <div className="relative -mx-4 flex items-center justify-between">
+               <div className="px-4">
+                  <Link href="/" className="navbar-logo block py-5">
+                     <Image src="/logo-white.png" alt="logo" width={180} height={60} priority />
+                  </Link>
+               </div>
 
-         <button aria-label="Menu" className="p-2 rounded-xl text-green-600 hover:bg-green-50 focus:outline-none transition-colors"></button>
-      </nav>
+               <div className="px-4">
+                  <Link href="/cerita" className="rounded-md bg-white bg-opacity-20 px-6 py-2 text-base font-medium text-white duration-300 ease-in-out hover:bg-opacity-100 hover:text-dark">
+                     Ayo Eksplor →
+                  </Link>
+               </div>
+            </div>
+         </div>
+      </div>
    );
 }

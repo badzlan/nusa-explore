@@ -21,7 +21,7 @@ export default function Team() {
                   <div className="group mb-8 rounded-xl bg-white px-5 pb-10 pt-12 shadow-testimonial dark:bg-dark dark:shadow-none">
                      {/* Avatar */}
                      <div className="relative z-10 mx-auto mb-5 h-[120px] w-[120px]">
-                        <Image src="/assets/images/team/team-01.png" alt="team image" width={120} height={120} className="h-[120px] w-[120px] rounded-full object-cover" />
+                        <Image src="/logo.jpg" alt="team image" width={120} height={120} className="h-[120px] w-[120px] rounded-full object-cover" />
                      </div>
 
                      {/* Info */}
@@ -35,7 +35,7 @@ export default function Team() {
                   <div className="group mb-8 rounded-xl bg-white px-5 pb-10 pt-12 shadow-testimonial dark:bg-dark dark:shadow-none">
                      {/* Avatar */}
                      <div className="relative z-10 mx-auto mb-5 h-[120px] w-[120px]">
-                        <Image src="/assets/images/team/team-01.png" alt="team image" width={120} height={120} className="h-[120px] w-[120px] rounded-full object-cover" />
+                        <Image src="/logo.jpg" alt="team image" width={120} height={120} className="h-[120px] w-[120px] rounded-full object-cover" />
                      </div>
 
                      {/* Info */}
@@ -49,7 +49,7 @@ export default function Team() {
                   <div className="group mb-8 rounded-xl bg-white px-5 pb-10 pt-12 shadow-testimonial dark:bg-dark dark:shadow-none">
                      {/* Avatar */}
                      <div className="relative z-10 mx-auto mb-5 h-[120px] w-[120px]">
-                        <Image src="/assets/images/team/team-01.png" alt="team image" width={120} height={120} className="h-[120px] w-[120px] rounded-full object-cover" />
+                        <Image src="/logo.jpg" alt="team image" width={120} height={120} className="h-[120px] w-[120px] rounded-full object-cover" />
                      </div>
 
                      {/* Info */}

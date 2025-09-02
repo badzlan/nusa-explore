@@ -1195,7 +1195,7 @@ body {
 }
 
 .from-dark-700 {
-   --tw-gradient-from: #090e34b3 var(--tw-gradient-from-position);
+   --tw-gradient-from: #4F200D var(--tw-gradient-from-position);
    --tw-gradient-to: rgb(9 14 52 / 0) var(--tw-gradient-to-position);
    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
@@ -2083,7 +2083,7 @@ body {
 }
 
 :is(.dark .dark\:bg-dark-700) {
-   background-color: #090e34b3;
+   background-color: #4F200D;
 }
 
 :is(.dark .dark\:bg-white) {

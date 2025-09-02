@@ -17,7 +17,7 @@ export default function Features() {
             <div className="-mx-4 flex flex-wrap">
                {/* Feature Item */}
                <div className="w-full px-4 md:w-1/2 lg:w-1/4">
-                  <div className="wow fadeInUp group mb-12" data-wow-delay=".1s">
+                  <div className="group mb-12">
                      <div className="relative z-10 mb-10 flex h-[70px] w-[70px] items-center justify-center rounded-[14px] bg-primary">
                         <span className="absolute left-0 top-0 -z-[1] mb-8 flex h-[70px] w-[70px] rotate-[25deg] items-center justify-center rounded-[14px] bg-primary bg-opacity-20 duration-300 group-hover:rotate-45"></span>
                         {/* SVG Icon */}
@@ -33,7 +33,7 @@ export default function Features() {
                   </div>
                </div>
                <div className="w-full px-4 md:w-1/2 lg:w-1/4">
-                  <div className="wow fadeInUp group mb-12" data-wow-delay=".1s">
+                  <div className="group mb-12">
                      <div className="relative z-10 mb-10 flex h-[70px] w-[70px] items-center justify-center rounded-[14px] bg-primary">
                         <span className="absolute left-0 top-0 -z-[1] mb-8 flex h-[70px] w-[70px] rotate-[25deg] items-center justify-center rounded-[14px] bg-primary bg-opacity-20 duration-300 group-hover:rotate-45"></span>
                         {/* SVG Icon */}
@@ -49,7 +49,7 @@ export default function Features() {
                   </div>
                </div>
                <div className="w-full px-4 md:w-1/2 lg:w-1/4">
-                  <div className="wow fadeInUp group mb-12" data-wow-delay=".1s">
+                  <div className="group mb-12">
                      <div className="relative z-10 mb-10 flex h-[70px] w-[70px] items-center justify-center rounded-[14px] bg-primary">
                         <span className="absolute left-0 top-0 -z-[1] mb-8 flex h-[70px] w-[70px] rotate-[25deg] items-center justify-center rounded-[14px] bg-primary bg-opacity-20 duration-300 group-hover:rotate-45"></span>
                         {/* SVG Icon */}
@@ -65,7 +65,7 @@ export default function Features() {
                   </div>
                </div>
                <div className="w-full px-4 md:w-1/2 lg:w-1/4">
-                  <div className="wow fadeInUp group mb-12" data-wow-delay=".1s">
+                  <div className="group mb-12">
                      <div className="relative z-10 mb-10 flex h-[70px] w-[70px] items-center justify-center rounded-[14px] bg-primary">
                         <span className="absolute left-0 top-0 -z-[1] mb-8 flex h-[70px] w-[70px] rotate-[25deg] items-center justify-center rounded-[14px] bg-primary bg-opacity-20 duration-300 group-hover:rotate-45"></span>
                         {/* SVG Icon */}
